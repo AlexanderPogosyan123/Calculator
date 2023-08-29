@@ -11,6 +11,30 @@
             int number2 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("enter operation");
             char ch = Convert.ToChar(Console.ReadLine());
-            
+
+            switch (ch)
+            {
+                case '+':
+                    Console.WriteLine($"{number1} + {number2} = {number1+number2}");
+                    break;
+                case '-':
+                    Console.WriteLine($"{number1} - {number2} = {number1-number2}");
+                    break;
+                case '*':
+                    Console.WriteLine($"{number1} * {number2} = {number1*number2}");
+                    break;
+                case '/':
+                    if (number2 == 0)
+                    {
+                        Console.WriteLine("нельзя делить на нуль");
+                        break;
+                    }
+                    Console.WriteLine($"{number1} / {number2} = {number1/number2}");
+                    break;
+                default:
+                    break;
+            }
+        }
+
     }
 }
