@@ -46,6 +46,13 @@
             Console.WriteLine("hello");
             Console.WriteLine("hello");
 
+
+            Console.WriteLine("Bye");
+            Console.WriteLine("Bye");
+            Console.WriteLine("Bye");
+            Console.WriteLine("Bye");
+            
+            
         }
 
     }
